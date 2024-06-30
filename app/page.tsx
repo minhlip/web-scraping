@@ -1,5 +1,12 @@
+import HeroCarousel from '@/components/HeroCarousel';
+import SearchBar from '@/components/SearchBar';
 import { Icons } from '@/const/icons';
 import Image from 'next/image';
+
+
+const isValidAmazonProductURL = (url: string) => {
+  
+}
 
 const Home = () => {
   return (
@@ -26,12 +33,14 @@ const Home = () => {
               Powerful, self-serve product and growth analytics to help you
               convert, engage, and retain more
             </p>
+            <SearchBar />
           </div>
+          <HeroCarousel />
         </div>
       </section>
-      <section className='trending-section'>
-        <h2 className='section-text'>Trending</h2>
-        <div className='flex flex-wrap gap-x-8 gap-y-16'> </div>
+      <section className="trending-section">
+        <h2 className="section-text">Trending</h2>
+        <div className="flex flex-wrap gap-x-8 gap-y-16"> </div>
       </section>
     </>
   );

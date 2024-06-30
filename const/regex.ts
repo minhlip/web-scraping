@@ -1,0 +1,1 @@
+export const validAmazonURL = /amazon\.com|amazon\..+|.+\.amazon$/
