@@ -59,11 +59,11 @@ export async function scrapeAmazonProduct(url: string) {
     );
 
     const discountRate = $('.savingsPercentage').text().trim();
-    const description = extractDescription($)
+    const description = extractDescription($);
 
     console.log({
-      description
-    })
+      description,
+    });
 
     const data: IScrappingData = {
       url,
@@ -89,3 +89,9 @@ export async function scrapeAmazonProduct(url: string) {
     throw new Error(`Failed to scrape product: ${error.message}`);
   }
 }
+
+export const getHighestPrice = () => {};
+
+export const getLowestPrice = () => {};
+
+export const getAveragePrice = () => {};
